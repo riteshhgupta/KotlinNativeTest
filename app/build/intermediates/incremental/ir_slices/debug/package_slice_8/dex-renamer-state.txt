@@ -1,0 +1,4 @@
+#Mon Jan 14 23:01:19 IST 2019
+base.0=/Users/riteshgupta/Workspace/Personal/Android/KotlinNativeTest/app/build/intermediates/transforms/dexMerger/debug/8
+path.0=classes.dex
+renamed.0=classes.dex

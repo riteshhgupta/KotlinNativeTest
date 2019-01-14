@@ -18,6 +18,7 @@ kotlin {
             api 'org.jetbrains.kotlin:kotlin-stdlib-common'
             implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core-common:$coroutines_version"
             implementation "io.ktor:ktor-client:$ktor_version"
+            implementation 'com.github.kittinunf.fuel:fuel:1.16.0'
         }
 
         androidMain.dependencies {

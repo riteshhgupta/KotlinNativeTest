@@ -7,6 +7,7 @@ import io.ktor.client.request.url
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import com.github.kittinunf.fuel.httpGet
 
 sealed class RequestMethod(val stringValue: String) {
     class Get: RequestMethod("GET")
@@ -31,6 +32,11 @@ open class NetworkClient(val rootURLString: String) {
 
     private fun fullURLStringForPath(path: String): String {
         return "$rootURLString/$path"
+    }
+
+    fun fuel() {
+        "https://httpbin.org/get"
+            .httpGet()
     }
 
     fun executeRequest(

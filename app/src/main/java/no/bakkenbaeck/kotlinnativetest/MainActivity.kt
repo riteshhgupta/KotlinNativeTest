@@ -12,8 +12,14 @@ import no.bakkenbaeck.mpp.mobile.createApplicationScreenMessage
 import no.bakkenbaeck.mpp.mobile.localization.Localized
 import no.bakkenbaeck.mpp.mobile.styles.ButtonStyle
 import no.bakkenbaeck.mpp.mobile.styles.StaticTextStyle
+import com.github.kittinunf.fuel.httpGet
 
 class MainActivity : AppCompatActivity() {
+
+    fun fuel() {
+        "https://httpbin.org/get"
+            .httpGet()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
